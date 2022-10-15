@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" style="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Calculator</title>
+        <link href="./Calculator_files/jquery.ui.all.css" rel="stylesheet" type="text/css">
+        <link href="./Calculator_files/Site.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <header>
+        <div class="content-wrapper"></div>
+    </header>
+        <div id="body">
+    <section class="content-wrapper main-content clear-fix">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,inital-scale=1">
+<div class="cal">
+    <div class="bg">
+        <div class="display">
+            <p id="display"></p>
+        </div>
+    <div class="buttons">
+                <button onclick="getInputValue()">C</button>
+                <button onclick="getInputValue()">%</button>
+                <button onclick="getInputValue()">DEL</button>
+                <button onclick="getInputValue()">/</button><br>
+                <button onclick="getInputValue()">7</button>
+                <button onclick="getInputValue()">8</button>
+                <button onclick="getInputValue()">9</button>
+                <button onclick="getInputValue()">*</button><br>
+                <button onclick="getInputValue()">4</button>
+                <button onclick="getInputValue()">5</button>
+                <button onclick="getInputValue()">6</button>
+                <button onclick="getInputValue()">-</button><br>
+                <button onclick="getInputValue()">1</button>
+                <button onclick="getInputValue()">2</button>
+                <button onclick="getInputValue()">3</button>
+                <button onclick="getInputValue()">+</button><br>
+                <button onclick="getInputValue()">00</button>
+                <button onclick="getInputValue()">0</button>
+                <button onclick="getInputValue()">.</button>
+                <button class="equalto" onclick="getInputValue()">=</button>
+            </div>
+        </div>
+    </div>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+     }
+    .bg {
+        border-radius: 37px;
+        background: #c1e1ec;
+        padding: 30px 30px 30px 30px;
+    }
+    .buttons button{
+        margin-right: 6px;
+        margin-bottom: 6px;
+        width: 70px;
+        height:70px;
+        color: rgb(17, 19, 19);
+        background-color: rgb(190, 185, 248);
+        border-radius: 50%;
+        font-size: 25px;
+        font-weight: bold;
+        border: none ;
+        transition: 0.2s ease-in-out;
+    }
+    .buttons button:hover{
+        background-color: rgb(249, 159, 238);
+        color: aliceblue;
+    }
+    .cal{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 8em;
+    }
+    .cal span{
+        font-size: 16px;
+    }
+    .cal .display{
+        background-color: rgb(253, 253, 253);
+        border: 3px solid rgb(212,194,255);
+        width: 96.3%;
+        border-radius: 15px;
+        height: 60px;
+        margin-bottom: 8px;
+        justify-content: center;
+        align-items:center;
+        font-size: 30px;
+        line-height: 60px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(14, 14, 14);
+        letter-spacing: 2px;
+    }
+    .display:hover{
+        background-color: aliceblue;
+    }
+</style>
+<script src="./Calculator_files/CalJavaScript.js">
+</script>
+</section>
+    </div>
+        <div class="footer-basic">
+        </div>
+</body>
+</html>
